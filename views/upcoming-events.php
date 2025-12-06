@@ -11,9 +11,10 @@
             <tr>
                 <td>
                     <!-- TODO: Add proper href to details page -->
-                    <?= $event['title']; ?>
+                    <a href="event-details?id=<?= $event['id']; ?>"><?= $event['title']; ?></a>
                 </td>
-                <td><?= $event['event_date']; ?></td>
+
+                <td><?= date("M j, Y", strtotime($event['event_date'])); ?></td>
                 <td><?= $event['location']; ?></td>
             </tr>
         <?php endforeach; ?>
