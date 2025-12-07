@@ -12,6 +12,11 @@
         <li class="nav-item">
           <a class="nav-link" href="admin-login">Admin Login</a>
         </li>
+        <?php if ((isset($_SESSION['isAdmin'])) && $_SESSION['isAdmin'] == true): ?>
+          <li class="nav-item">
+            <a class="nav-link" href="event-form">Create New Event</a>
+          </li>
+        <?php endif; ?>
       </ul>
     </div>
   </div>
