@@ -16,6 +16,9 @@
           <li class="nav-item">
             <a class="nav-link" href="event-form">Create New Event</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registrations">Registrations</a>
+          </li>
         <?php endif; ?>
       </ul>
     </div>

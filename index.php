@@ -57,6 +57,10 @@ switch ($route) {
         showRegisterSuccess();
         break;
 
+    case 'registrations':
+        showRegistrations();
+        break;
+
     default:
         showEvents();
 }

@@ -146,3 +146,15 @@ function verifyAdmin()
     header('Location: ' . BASE_URL . "/index.php?route=admin-login");
     exit;
 }
+
+function showRegistrations()
+{
+    global $header;
+    global $footer;
+
+    $registrations = getRegistrations();
+
+    include $header;
+    include __DIR__ . '/../views/registrations.php';
+    include $footer;
+}
